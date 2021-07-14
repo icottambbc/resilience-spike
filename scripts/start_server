@@ -1,2 +1,2 @@
 #!/bin/bash
-python /var/www/sample-app/index.py
+python3 /var/www/sample-app/index.py
