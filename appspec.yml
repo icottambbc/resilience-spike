@@ -8,7 +8,7 @@ files:
   - source: /conf/sample_app.conf
     destination: /etc/httpd/conf.d
 hooks:
-  BeforeInstall:
+  AfterInstall:
     - location: scripts/install_dependencies
       timeout: 300
       runas: root
