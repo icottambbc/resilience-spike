@@ -1,8 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.py
+  - source: /app.wsgi
     destination: /var/www/sample-app
+  - source: /
+    destination: /home/ec2-user/sample-app
+  - source: /conf/sample_app.conf
+    destination: /etc/httpd/conf.d
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies

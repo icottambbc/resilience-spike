@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 /var/www/sample-app/index.py
+service httpd start
