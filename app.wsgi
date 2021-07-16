@@ -1,5 +1,5 @@
 #flaskapp.wsgi
 import sys
-sys.path.insert(0, '/home/ec2-user/sample-app')
+sys.path.insert(0, '/var/www/html/flaskapp')
 
-from application import application
+from application import app as application
