@@ -1,9 +1,12 @@
 from flask import Flask, render_template
+from random import randrange
 import numpy as np
 app = Flask(__name__)
 
 def sum():
-  DATA = [10, 9, 4, 15, 2, 9, 13, 10, 8, 8, 22, 6, 3, 8, 4, 12, 5, 9, 12]
+  DATA = []
+  for i in range(1000000):
+    DATA.append(randrange(10))
   return str(np.sum(DATA))
 
 @app.route('/')
