@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 def sum():
   DATA = []
-  for i in range(10000000):
+  for i in range(5000000):
     DATA.append(randrange(10))
   return str(np.sum(DATA))
 
